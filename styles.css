@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background-color: #000;
+}
+
 .container .head {
   top: 0;
   left: 0;
@@ -58,10 +62,10 @@
 }
 
 .banner .heading__container {
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .banner .heading__container .heading h2 {
@@ -94,4 +98,33 @@
   font-size: 1.2rem;
   line-height: 60px;
   min-width: 310px;
+}
+
+.part__one {
+  border-bottom: 0.6rem solid #111;
+}
+
+.part__one .text__container {
+  width: 40%;
+}
+
+.part__one .text__container h1 {
+  font-size: 3.3rem;
+  letter-spacing: 2px;
+}
+
+.part__one .text__container p {
+  font-size: 1.7rem;
+}
+
+.part__one .img__container {
+  width: 45%;
+}
+
+.part__one .img__container img {
+  width: 100%;
+}
+
+.part__two .text__container {
+  width: 48%;
 }
