@@ -128,3 +128,58 @@ body {
 .part__two .text__container {
   width: 48%;
 }
+
+.list__container {
+  width: 60%;
+}
+
+.list__container h1 {
+  font-size: 3rem;
+}
+
+.title {
+  background-color: #303030;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.icon {
+  width: 20px;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  top: -1.5px;
+}
+
+.icon::after {
+  transform: rotate(90deg);
+  transition: 0.5s linear;
+}
+
+.text {
+  background-color: #303030;
+  line-height: 35px;
+  font-size: 1.7rem;
+  font-weight: 400;
+  height: 0;
+  opacity: 0;
+}
+
+.item:target .text {
+  opacity: 1;
+  height: auto;
+  padding: 20px 30px;
+  margin: 0;
+  border-top: 2px solid #000;
+  margin-bottom: 6px;
+}
+
+.item:target .icon::after {
+  transform: rotateY(90deg);
+}
